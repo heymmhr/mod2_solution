@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    justify-content: center;
+    display: flex;
+}
+.heading{
+    text-align: center;
+    margin: 50px;
+}
+
+.first_column, .second_column, .third_column{
+    border: 3px solid black;
+    margin: 25px;
+    background-color: #999999;
+}
+.first_column p, .second_column p, .third_column p{
+    font-weight: 600;
+    padding: 10px;
+}
+.first_column{
+    float: left;
+    margin-right: 6rem;
+}
+.second_column{
+    float: left;
+}
+.third_column{
+    float: right;
+}
+.first_column h2{
+    border: 2px solid black;
+    text-align: center;
+    border-top: none;
+    color: #000;
+    background-color: #D59899;
+    padding: 5px;  
+}
+.second_column h2{
+    border: 2px solid black;
+    text-align: center;
+    border-top: none;
+    color: #fff;
+    background-color: #C14543;
+    padding: 5px;
+}
+.third_column h2{
+    border: 2px solid black;
+    text-align: center;
+    border-top: none;
+    color: #000;
+    background-color: #E5D198;
+    padding: 5px;
+}
+
+@media (min-width:992px){
+    .first_column{
+        width: 25%;
+    }
+    .second_column{
+        width: 25%;
+    }.third_column{
+       width: 25%;
+    }
+    .first_column h2, .second_column h2, .third_column h2{
+        margin-left: 12rem;
+        width: auto;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .first_column{
+        width: 40%;
+        margin-right: 0;
+    }
+    .second_column{
+        width: 40%;
+        float: right;
+    }
+    .third_column{
+        width: 95%;
+        float: left;
+     }
+     .third_column h2{
+        width: 25%;
+     }
+     .first_column h2, .second_column h2{
+        margin-left: 12rem;
+        width: auto;
+    }.third_column h2{
+        margin-left: 45rem;
+        width: auto;
+    }
+}
+@media (max-width:767px){
+    .first_column{
+        width: 90%;
+    } .second_column{
+        width: 90%;
+    }
+    .third_column{
+        width: 90%;
+        float: left;
+     }.first_column h2, .second_column h2, .third_column h2{
+        margin-left: 30rem;
+        width: auto;
+    }
+}
+
+
